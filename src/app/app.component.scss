@@ -1,0 +1,70 @@
+.base {
+    background: rgb(240, 240, 240);
+    margin-top: 5px;
+    border: 3px solid black;
+    border-radius: 25px 25px 5px 5px;
+    width: 100%;
+}
+
+.maindisplay {
+    background: rgb(240, 240, 240);
+    border-radius: 25px 25px 5px 5px;
+    height: 25vh;
+    padding: 5% !important;
+    font-size: 2rem;
+    text-align: right;
+    font-family: 'Trebuchet MS', monospace;
+    overflow: auto;
+}
+
+.subdisplay {
+    border-bottom: 1px solid rgb(126, 120, 120);
+    height: 40%;
+    font-size: 2rem;
+    overflow: auto;
+}
+
+.keypad {
+    height: calc(200% / 3);
+}
+
+.keys {
+    margin: 0;
+    height: 20%;
+    background: whitesmoke;
+    color: rgb(139, 139, 139);
+    padding: 5%;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.keys:hover {
+    opacity: 1;
+}
+
+.ackey {
+    color: rgb(0, 0, 0);
+    background: rgb(117, 117, 117);
+}
+
+.ckey {
+    color: rgb(0, 0, 0);
+    background: rgb(117, 117, 117);
+}
+
+.equalkey {
+    color: white;
+    background-color: rgb(72, 72, 72);
+}
+
+.numkey {
+    color: rgb(63, 63, 63);
+    background-color: rgb(117, 117, 117);
+}
+
+.opkey {
+    color: white;
+    background-color: rgb(117, 117, 117);
+}
