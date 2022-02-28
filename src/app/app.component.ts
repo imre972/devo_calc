@@ -28,7 +28,12 @@ export class AppComponent {
         return;
       }
       this.operand1 = parseFloat(this.mainText);
-      this.operator = key;
+      if (key === '') {
+        this.operator = this.operator;
+      } else {
+        this.operator = key;
+      }
+      console.log('this.operator: ', this.operator);
       this.operatorSet = true;
     }
     if (this.mainText.length === 10) {
@@ -72,11 +77,11 @@ export class AppComponent {
     } else {
       this.operand2 = parseFloat(this.mainText.split(this.operator)[1]);
     }
-    if (this.operator === '-' || this.operator === '') {
+    if (this.operator === '-') {
       this.subText = this.mainText;
       this.mainText = (this.operand1 - this.operand2).toString();
       this.subText = this.calculationString;
-    } else if (this.operator === '+' || this.operator === '') {
+    } else if (this.operator === '+') {
       this.subText = this.mainText;
       this.mainText = (this.operand1 + this.operand2).toString();
       this.subText = this.calculationString;
